@@ -184,7 +184,9 @@ function keyShortcuts(evt,timer){
   evt.preventDefault();
   var evt = (evt) ? evt : ((event) ? event : null);
   var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-  if (node.type == "submit"){
+  console.log(node.type);
+  if (node.type == "submit" || node.type == "button"){
+    evt.preventDefault();
     return false;
   }
   var keyCode = evt.keyCode;
@@ -195,7 +197,6 @@ function keyShortcuts(evt,timer){
     else{
       timer.stop();
     }
-    return;
   }
   if (keyCode == 174){
     timer.reset();

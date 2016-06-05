@@ -1,7 +1,7 @@
 body{
   background-color: #f96;
   color: white;
-
+  font-family: 'Josefin Slab';
 }
 
 .settings{
@@ -41,17 +41,17 @@ body{
 }
 
 .clock p{
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 50px;
 }
 
 .break-text{
   margin-top: 10px !important;
   visibility: hidden;
+  font-size: 25px;
 }
 
 .newton-cradle{
-  margin-top: 20px;
   width: 110px;
   height: 100px;
   margin-left: auto;
